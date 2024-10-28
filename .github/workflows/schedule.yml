@@ -7,6 +7,7 @@ on:
 jobs:
   update-gist:
     runs-on: ubuntu-latest
+    environment: l33t-c0d3-t1m3
     steps:
       - uses: actions/checkout@master
       - name: Update gist
