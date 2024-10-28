@@ -1,17 +1,16 @@
-name: l33t-c0d3-t1m3
+name: l33t-c0d3-t1m3-wkflw
 on:
   schedule:
     - cron: "0 0 * * *"
-  # Manual triggers with workflow_dispatch
   workflow_dispatch:
 jobs:
-  update-gist:
+  l33t-c0d3-t1m3-job:
     runs-on: ubuntu-latest
     environment: l33t-c0d3-t1m3
     steps:
       - uses: actions/checkout@master
       - name: Update l33t-c0d3-t1m3 stats
-        uses: nickheyer/l33t-c0d3-t1m3@master
+        uses: ./.github/l33t-c0d3-t1m3-action@master
         env:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
           GIST_ID: ${{ secrets.GIST_ID }}
