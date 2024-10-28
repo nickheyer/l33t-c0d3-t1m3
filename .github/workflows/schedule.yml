@@ -10,7 +10,7 @@ jobs:
     steps:
       - uses: actions/checkout@master
       - name: Update l33t-c0d3-t1m3 stats
-        uses: ./.github/l33t-c0d3-t1m3-action@master
+        uses: ./.github/actions/l33t-c0d3-t1m3-action@master
         env:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
           GIST_ID: ${{ secrets.GIST_ID }}
