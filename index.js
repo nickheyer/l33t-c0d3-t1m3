@@ -1,5 +1,5 @@
-const { WakaTimeClient, RANGE } = require("wakatime-client");
-const { Octokit } = require("@octokit/rest");
+import { WakaTimeClient, RANGE } from "wakatime-client";
+import { Octokit } from "@octokit/rest";
 
 const {
   GIST_ID: gistId,
