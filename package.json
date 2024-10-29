@@ -1,15 +1,14 @@
 {
-  "name": "waka-box",
-  "version": "3.0.0",
+  "name": "l33t-c0d3-t1m3",
+  "version": "1.0.1",
   "description": "📊 Update a gist to contain your weekly WakaTime stats",
-  "author": "Matan Kushner <hello@matchai.me>",
+  "author": "Nicholas Heyer <nick@heyer.app",
   "license": "ISC",
   "scripts": {
     "build": "ncc build index.js --out dist --minify"
   },
   "dependencies": {
     "@octokit/rest": "^19.0.5",
-    "axios": "^1.6.0",
     "dotenv": "^16.0.3",
     "wakatime-client": "^2.7.0"
   },
