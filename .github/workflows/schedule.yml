@@ -9,9 +9,11 @@ jobs:
     runs-on: ubuntu-latest
     environment: l33t-c0d3-t1m3
     steps:
-      - uses: actions/checkout@master
+      - uses: actions/checkout@v3
+      - name: Install dependencies
+        run: npm install
       - name: Update l33t-c0d3-t1m3 stats
-        uses: ./.github/actions@master
+        uses: nickheyer/l33t-c0d3-t1m3@master
         env:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
           GIST_ID: ${{ secrets.GIST_ID }}
