@@ -9,9 +9,8 @@ jobs:
     runs-on: ubuntu-latest
     environment: l33t-c0d3-t1m3
     steps:
-      - uses: actions/checkout@v3
-      - name: Install dependencies
-        run: npm install
+      - uses: actions/checkout@v4
+      - run: npm install
       - name: Update l33t-c0d3-t1m3 stats
         uses: nickheyer/l33t-c0d3-t1m3@master
         env:
